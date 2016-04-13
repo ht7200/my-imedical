@@ -1,0 +1,376 @@
+@charset "utf-8"
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------------Reset----------------------------------- */
+/* ---------------------------------------------------------------------------- */
+*{
+  margin: 0;
+  padding: 0;
+}
+ul {
+	list-style: none;
+}
+
+a{color: #4C4C4C;text-decoration: none;}
+a:hover {text-decoration: none;}
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------------Html-Body------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+body {
+  margin: 0px;
+  padding: 0px;
+	background: #efefef;
+  color: #656565;;
+  font: 14px/22px "Microsoft YaHei", arial, serif;
+  font-family: Montserrat, sans-serif;
+}
+
+.clear{
+	clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Microsoft yahei', Arial, sans-serif;
+    font-weight: 700;
+    color: #333;
+}
+h4, .h4 {
+    font-size: 18px;
+}
+p {
+    margin: 0 0 10px;
+    height: 20px;
+}
+/* ---------------------------------------------------------------------------- */
+/* -------------------------------------Header--------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+header{
+   width: 100%;
+   height: 100px;
+   padding-top: 30px;
+   position: fixed;
+   top: 0px;
+   z-index: 12;
+   text-align: right;
+   background: #fff;
+   -webkit-box-shadow: 0px 5px 5px #ddd;
+   -moz-box-shadow: 0px 5px 5px #ddd;
+   box-shadow: 0px 5px 5px #ddd;
+   opacity: 0.85;
+   filter:Alpha(opacity=85); /* IE8 以及更早的浏览器 */
+
+}
+nav{
+	text-align: right;
+}
+.logo{
+	float: left;
+	width: 20%;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 15%;
+    vertical-align: middle;
+}
+.logo img{
+	height: 60px;
+	display: table;
+}
+.navs {
+    height: 60px;
+    line-height: 35px;
+    font-size: 13px;
+    margin-right: 10%;
+    float: right;
+    text-align: right;
+}
+.navs li{
+	display: inline-block;
+	padding: 0px 10px;
+}
+
+.navs a {
+    font-size: 15px;
+    color: #7b7b7b;
+    font-weight: bold;
+}
+
+.navs a:hover{
+  color: #010101;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #3EC1B4;
+  line-height: 150%;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* -------------------------------------section--------------------------------- */
+/* ---------------------------------------------------------------------------- */
+section {
+	width: 90%;
+	margin: 135px auto 0;
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* -------------------------------------banner--------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+
+.banner{
+	width: 84%;
+	margin: 0 auto ;
+	overflow: hidden;
+	position:relative;
+
+}
+
+.imgs {
+	margin: 0;
+	padding: 0;
+	margin-left: 0;
+}
+.imgs img{
+  width: 100%;
+  height: auto;
+}
+.banner .imgs li{
+  display: none;
+}
+.banner .imgs li.on{
+	display: block;
+}
+.banner .imgs li{ 
+	margin: 0;
+	float:left;
+}
+.banner .btn{
+  -webkit-transition: all 0.6s ease; /*Safari and Chrome*/
+  -moz-transition: all 0.6s ease; /*Firefox*/
+  -ms-transition: all 0.6s ease; /*IE 9*/
+  -o-transition: all 0.6s ease; /*Opera*/
+  transition: all 0.6s ease; 
+}
+
+.banner .btn{ display: block; width:40px; height:80px; background:rgba(3,3,3,0.2); position:absolute; top:50%; margin-top:-25px; cursor:pointer; text-align:center; line-height:80px; color:#FFF; font-size:80px; font-family:"宋体"; opacity: 0;filter:Alpha(opacity=0); /* IE8 以及更早的浏览器 */}
+.banner:hover .btn{ opacity: 1;filter:Alpha(opacity=1); /* IE8 以及更早的浏览器 */}
+
+.banner .btn_l{ left:0;}
+.banner .btn_r{ right:0;}
+
+
+/* ---------------------------------------------------------------------------- */
+/* -------------------------------------content--------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+
+.callaction{
+  width: 98%;
+  height: 80px;
+  margin: 10px auto 0;
+  line-height: 80px;
+  text-align: center;
+  background: #fff;
+}
+.inner-container {
+  padding-right: 20px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}  
+
+.wrap-cal{
+  width: 100%;
+  margin: 10px;
+  height: 250px;
+  background: #fff;
+}
+.wrap-cal .section{
+  height: 190px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+.section h3{
+  margin: 0;
+}
+.section img {
+  margin: 0;
+}
+
+.more{
+  width: 100%;
+  margin-right: 10px;
+  height: 20px;
+  line-height: 20px;
+  padding: 20px 0;
+  bottom: 0;
+  text-align: center;
+  background: #68A4C4;
+}
+.more a{
+  color: #ccc;
+}
+ .more a:hover{
+  color: #fff;
+ }
+
+/* ---------------------------------------------------------------------------- */
+/* -------------------------------------works--------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+.works .heading{
+  margin-top: 40px;
+  margin-left: 20px;
+}
+/* ---------------------------------------------------------------------------- */
+/* -------------------------------Item-Effect---------------------------------- */
+/* ---------------------------------------------------------------------------- */  
+.item-container {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  margin-bottom: 20px;
+
+  background: -webkit-linear-gradient(left top, #EAF3FF , #96ADC3); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top right, #EAF3FF, #96ADC3); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top right, #EAF3FF, #96ADC3); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top right, #EAF3FF , #96ADC3); /* Standard syntax (must be last)*/
+  
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.item-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all .5s ease; /*Safari and Chrome*/
+  -moz-transition: all .5s ease; /*Firefox*/
+  -ms-transition: all .5s ease; /*IE 9*/
+  -o-transition: all .5s ease; /*Opera*/
+  transition: all .5s ease; 
+}
+.item-container .item-caption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background: none;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .5s ease; /*Safari and Chrome*/
+  -moz-transition: all .5s ease; /*Firefox*/
+  -ms-transition: all .5s ease; /*IE 9*/
+  -o-transition: all .5s ease; /*Opera*/
+  transition: all .5s ease; 
+}
+.item-caption-inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.item-caption-inner1 {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.item-container .item-caption h3, .item-container .item-caption span{
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #444;
+  display: none;
+}
+.item-container .item-caption h3{
+  font-size: 23px;
+  letter-spacing: 2px;
+  margin-bottom : 12px;
+}
+.item-container .item-caption span{
+  font-style: italic;
+  font-size: 12px;
+}
+
+.item-container:hover .item-caption {
+  background: rgba(255, 255, 255, .75);
+}
+.item-container:hover .item-caption h3, .item-container:hover .item-caption span{
+  display: block;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* -------------------------------------footer--------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+
+footer {
+    margin-top: 40px;
+    background: #68A4C4;
+    padding: 50px 50px 0;
+    color: #f8f8f8;
+}
+
+footer h5, footer h6 {
+    color: #fff;
+}
+.infor{
+    padding: 0 20px 0 20px;
+    position: relative;
+}
+.widget{
+    padding-right:30px; 
+}
+.widget h5 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+address {
+    margin-bottom: 20px;
+    font-style: normal;
+}
+ul.link-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul.link-list li {
+    margin: 0;
+    padding: 2px 0 2px 0;
+    list-style: none;
+}
+footer ul.link-list li a {
+    color: #fff;
+}
+
+.copyright {
+  margin-top: 20px;
+  display: inline-block;
+  text-align: left;
+  font-size: 12px;
+}
+.to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+.to-top a img {
+    width: 20px;
+    padding: 10px;
+    background: #fff;
+    opacity: .6;
+    border-radius: 6px;
+}
