@@ -60,7 +60,7 @@ Author URI: http://www.zerotheme.com/
 .zerogrid .offset-5-6{margin-left: 83.33%;}
 
 @media only screen and (min-width: 960px) and (max-width: 1199px) {
-	.zerogrid{width:960px;}
+	.zerogrid{width:100%;}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
